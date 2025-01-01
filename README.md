@@ -29,25 +29,34 @@ This project bridges the gap by:
    - Explore a high-level flowchart of the encoder-decoder framework.
    - See the connections between components like attention, feed-forward layers, and embeddings.
   
-#How Transformers Work
-** Self-Attention Mechanism**
+# How Transformers Work
+
+### **1. Self-Attention Mechanism**
 Self-Attention enables a model to dynamically focus on the most relevant parts of an input sequence. For example:
 
-In the sentence "The quick brown fox jumps over the lazy dog", the word "jumps" might attend more to "fox" (the subject).
+In the sentence **"The quick brown fox jumps over the lazy dog"**, the word **"jumps"** might attend more to **"fox"** (the subject).
+
 This project visualizes these attention weights using a heatmap.
 
-** Positional Encoding**
+---
+
+### **2. Positional Encoding**
 Unlike RNNs, Transformers process sequences in parallel, so they lack inherent positional information. To address this:
 
-Sinusoidal positional encodings are added to word embeddings, encoding the position of each word in the sequence.
+- **Sinusoidal positional encodings** are added to word embeddings, encoding the position of each word in the sequence.
+
 This project illustrates these encodings as heatmaps.
 
-** Encoder-Decoder Framework**
+---
+
+### **3. Encoder-Decoder Framework**
 Transformers consist of:
 
-Encoder: Processes the input sequence into a meaningful representation.
-Decoder: Uses the encoder's output to generate the target sequence.
+- **Encoder**: Processes the input sequence into a meaningful representation.
+- **Decoder**: Uses the encoder's output to generate the target sequence.
+
 This project provides a flow diagram of the entire framework.
+
 
 
 
